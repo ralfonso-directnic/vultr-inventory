@@ -91,11 +91,14 @@ func fetchHosts() ([]interface{},error) {
 
 	if(err!=nil){
 
+
+
 	}else{
 
-		apiKey=cfg.Section("").Key("key").String()
+		apiKey=cfg.Section("default").Key("key").String()
 
 	}
+	
 
 	if(len(apiKey)<1) {
 
